@@ -1,4 +1,4 @@
 cube_summation
 ==============
 
-A Symfony project created on January 12, 2017, 11:00 am.
+Web application to calculates the sum of the value of blocks of a cube
