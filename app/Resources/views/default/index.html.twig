@@ -8,6 +8,10 @@
 <div class="container">
     <h1>Cube Summation</h1>
 
+    <div class="alert alert-danger hidden">
+          <strong>Danger!</strong>
+    </div>
+
     <div class="panel panel-default">
         <div class="panel-heading">Input example:</div>
         <div class="panel-body">
@@ -27,11 +31,14 @@
         <label>Input</label>
         <textarea id="input" cols="50" rows="10" class="form-control" placeholder="Add here your input (iterations, dimentions and operations)"></textarea>
     </div>
+
+    <button id="submit" type="button" class="btn btn-primary">Calculate</button>
+    <hr>
+
     <div class="form-group">
         <label>Output</label>
         <textarea id="output" cols="50" rows="10" class="form-control" readonly></textarea>
     </div>
-    <button id="submit" type="button" class="btn btn-primary">Calculate</button>
 </div>
 {% endblock %}
 

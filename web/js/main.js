@@ -13,17 +13,21 @@ function calculate(){
         type: 'get',
         dataType: 'json',
         success: function(response){
+            console.log(response);
             var data = response.data;
             var output = "";
 
             data.forEach(function(val){
                 output += val + "\n";
             });
+            $('.alert-danger').append("");
+            $('.alert-danger').addClass("hidden");
             $('#output').val(output);
+            $("html, body").animate({ scrollTop: $(document).height() }, 1000);
         },
         error: function(a, b){
-            console.error(a);
-            console.error(b);
+            $('.alert-danger').append("Something went wrong, please try again.");
+            $('.alert-danger').removeClass("hidden");
         }
     });
 }
